@@ -18,7 +18,7 @@ const reportSchema = new mongoose.Schema(
             maxLength: 500
         },
         location: {
-            latitute: {
+            latitude: {
                 type: Number,
                 required: true
             },
@@ -59,4 +59,4 @@ const reportSchema = new mongoose.Schema(
     }
 )
 
-export default Report = mongoose.model("Report", reportSchema);
+export const Report = mongoose.model("Report", reportSchema);
